@@ -3,7 +3,7 @@ const express = require("express");
 const fs = require("fs");
 const app = express();
 const routes = require("./routes");
-
+const cors = require("cors")
 const path = require("path");
 
 app.use(express.static(path.join(__dirname, "public")));
